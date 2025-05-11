@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <!-- Fav Icon Link  -->
+    <link
+      rel="shortcut icon"
+      href="./images/page4Image/logo.png"
+      type="image/x-icon" />
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- External CSS (Bootstrap) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous" />
+    <!-- External JS (Bootstrap) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+      defer></script>
+    <!-- External Icon (Bootstrap) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Google Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <!-- Font-awesome cdn Link   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container-fluid bg-con overflow-auto">
+      <!-- Navigation Bar  Start Hear -->
+      <div
+        class="row justify-content-evenly align-items-center shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+        <!-- Left  -->
+        <div class="col-sm-4 col-md-4 col-lg-5">
+          <form class="d-flex" role="search">
+            <button class="btn w-25 h-25 bg-body rounded" type="submit">
+              <i class="bi bi-list fs-3"></i>
+            </button>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search Countries"
+              aria-label="Search " />
+          </form>
+        </div>
+        <!-- Center  -->
+        <div class="col-sm-4 col-md-3 col-lg-3 ms-3">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./images/page4Image/logo.png"
+              alt="K News"
+              class="w-50 h-25"
+          /></a>
+        </div>
+        <!-- Right  -->
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-evenly align-items-center">
+          <p class="">Notification</p>
+          <i class="bi bi-bell-fill fs-3 text-danger"></i>
+          <button type="button" class="btn btn-dark text-white btn-lg">
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+      <!-- Navigation Bar  End Hear -->
+      <!-- Sub-Navigation Bar Start Hear -->
+      <div class="d-flex align-items-center justify-content-center pt-sm-3 nmt">
+        <nav class="navbar navbar-expand-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav fs-5">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-black"
+                  aria-current="page"
+                  href="#"
+                  >Entertainment</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Sports </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Politics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Technology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Health</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--Sub-Navigation Bar End Hear -->
+      <!-- HeadLine News Start Hear  -->
+      <div class="row justify-content-between align-items-center my-5">
+        <!-- Left Side  -->
+        <div class="col-sm-12 col-md-7 col-lg-7">
+          <img
+            src="./images/page4Image/c-1.webp"
+            alt="Cover"
+            class="w-100 h-100" />
+          <h1 class="">
+            Global Climate Summit Yields Mixed results on Key Agreement
+          </h1>
+          <div class="row justify-content-between">
+            <p class="col-lg-9">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+              pariatur sunt, harum temporibus illo doloribus?
+            </p>
+            <div class="col-lg-3 d-flex justify-content-center gap-1">
+              <img src="./images/page4Image/staf-1.jpg" alt="" class="Staff" />
+              <div class="">
+                <h6 class="size-1">Michael Brown</h6>
+                <p class="size-2">December 18, 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right  Side  -->
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <!-- Line-01  -->
+          <div class="">
+            <!-- Part-1  -->
+            <div
+              class="d-flex justify-content-between align-items-center gap-2 mt-4">
+              <img
+                src="./images/page4Image/cs-1.jpg"
+                alt=""
+                class="w-50 h-50" />
+              <div
+                class="d-flex flex-column justify-content-start align-items-start">
+                <h4 class="fs-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 text-center">
+                  <p class="">Technology</p>
+                  <p class="">|</p>
+                  <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                  <p class="">6 Min</p>
+                </div>
+              </div>
+            </div>
+            <!-- Part-2  -->
+            <div
+              class="d-flex justify-content-between align-items-center gap-2 mt-4">
+              <img
+                src="./images/page4Image/cs-2.jpg"
+                alt=""
+                class="w-50 h-50" />
+              <div
+                class="d-flex flex-column justify-content-start align-items-start">
+                <h4 class="fs-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 text-center">
+                  <p class="">Technology</p>
+                  <p class="">|</p>
+                  <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                  <p class="">6 Min</p>
+                </div>
+              </div>
+            </div>
+            <!-- hr-01 -->
+            <hr class="" />
+          </div>
+          <!-- Line-02  -->
+          <div class="">
+            <!-- Part-3  -->
+            <div
+              class="d-flex justify-content-between align-items-center gap-2 mt-4">
+              <img
+                src="./images/page4Image/cs-3.jpg"
+                alt=""
+                class="w-50 h-50" />
+              <div
+                class="d-flex flex-column justify-content-start align-items-start">
+                <h4 class="fs-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 text-center">
+                  <p class="">Technology</p>
+                  <p class="">|</p>
+                  <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                  <p class="">6 Min</p>
+                </div>
+              </div>
+            </div>
+            <!-- Part-4  -->
+            <div
+              class="d-flex justify-content-between align-items-center gap-2 mt-4">
+              <img
+                src="./images/page4Image/cs-4.jpeg"
+                alt=""
+                class="w-50 h-50" />
+              <div
+                class="d-flex flex-column justify-content-start align-items-start">
+                <h4 class="fs-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 text-center">
+                  <p class="">Technology</p>
+                  <p class="">|</p>
+                  <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                  <p class="">6 Min</p>
+                </div>
+              </div>
+            </div>
+            <!-- hr-02 -->
+            <hr class="" />
+          </div>
+        </div>
+      </div>
+      <!-- HeadLine News End Hear  -->
+      <!-- Latest News Start Hear  -->
+      <div class="bgtext">
+        <h2 class="tex fs-1 fw-bold container">
+          LATEST * LATEST * LATEST * LATEST
+        </h2>
+        <div class="posi row justify-content-between align-items-center">
+          <!-- Left Text side -->
+          <div class="col-sm-6 mb-sm-4 col-md-4 col-lg-4 ms-5 text-white">
+            <h3 class="my-3">
+              Blockchain Beyond Cryptocurrency: Revolutionizing Industries
+            </h3>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              reprehenderit delectus quidem cum minus eaque.
+            </p>
+            <div class="col-lg-5 d-flex justify-content-center gap-2">
+              <img src="./images/page4Image/staf-1.jpg" alt="" class="Staff" />
+              <div class="">
+                <h6 class="size-1">Michael Brown</h6>
+                <p class="size-2">December 18, 2024</p>
+              </div>
+            </div>
+          </div>
+          <!-- Right Img side -->
+          <div class="col-sm-5 col-md-6 col-lg-7 mb-5">
+            <img
+              src="./images/page4Image/cs-3.jpg"
+              alt="Img"
+              class="w-75 h-75" />
+          </div>
+        </div>
+      </div>
+      <!-- Latest News End Hear  -->
+      <!-- Editors Pick Start Hear  -->
+      <div class="my-5">
+        <h1 class="ms-5">Editors Pick</h1>
+        <!-- Top  -->
+        <div class="row justify-content-between align-items-center">
+          <!-- Left Text side -->
+          <div class="col-sm-6 mb-sm-4 col-md-4 col-lg-4 ms-5">
+            <h3 class="my-3">
+              5G Expansion: What it Means for Consumers and Businesses
+            </h3>
+            <hr class="" />
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              reprehenderit delectus quidem cum minus eaque.
+            </p>
+          </div>
+          <!-- Right Img side -->
+          <div class="col-sm-5 col-md-6 col-lg-7 mb-5">
+            <img
+              src="./images/page4Image/g-1.jpg"
+              alt="Img"
+              class="w-75 h-75" />
+          </div>
+        </div>
+        <!-- Bottom  -->
+        <div class="row justify-content-around align-items-center">
+          <!-- feature-01  -->
+          <div class="col-lg-4">
+            <img
+              src="./images/page4Image/g-3.jpg"
+              alt="Cricket"
+              class="w-100 h-100" />
+            <div
+              class="d-flex flex-column justify-content-start align-items-start w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center gap-2 text-center">
+                <p class="">Technology</p>
+                <p class="">|</p>
+                <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                <p class="">6 Min</p>
+              </div>
+              <h4 class="fs-6 w-100 h-100">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                odit officiis blanditiis illum quas error.
+              </h4>
+            </div>
+          </div>
+          <!-- feature-02  -->
+          <div class="col-lg-4">
+            <img
+              src="./images/page4Image/g-6.jpg"
+              alt="Cricket"
+              class="w-100 h-100" />
+            <div
+              class="d-flex flex-column justify-content-start align-items-start w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center gap-2 text-center">
+                <p class="">Technology</p>
+                <p class="">|</p>
+                <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                <p class="">6 Min</p>
+              </div>
+              <h4 class="fs-6 w-100 h-100">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                odit officiis blanditiis illum quas error.
+              </h4>
+            </div>
+          </div>
+          <!-- feature-03  -->
+          <div class="col-lg-4">
+            <img
+              src="./images/page4Image/g-7.1.jpg"
+              alt="Cricket"
+              class="w-100 h-100" />
+            <div
+              class="d-flex flex-column justify-content-start align-items-start w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center gap-2 text-center">
+                <p class="">Technology</p>
+                <p class="">|</p>
+                <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                <p class="">6 Min</p>
+              </div>
+              <h4 class="fs-6 w-100 h-100">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                odit officiis blanditiis illum quas error.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Editors Pick End Hear  -->
+      <!-- Technology Start Hear  -->
+      <div class="my-5">
+        <!-- Text Top -->
+        <div class="mx-4 d-flex justify-content-between align-items-center">
+          <h1 class="">Technology</h1>
+          <h5 class="">View All <i class="bi bi-arrow-right"></i></h5>
+        </div>
+        <!-- Images Bottom  -->
+        <div class="my-3 row justify-content-around">
+          <!-- Left Side  -->
+          <div class="col-lg-5">
+            <div class="">
+              <img
+                src="./images/page4Image/g-2.jpg"
+                alt="Cricket"
+                class="w-100 h-100" />
+              <div
+                class="text-white ms-4 txd d-flex flex-column justify-content-start align-items-start w-100 h-100">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 text-center">
+                  <p class="">Technology</p>
+                  <p class="">|</p>
+                  <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                  <p class="">6 Min</p>
+                </div>
+                <h4 class="fs-6 w-50 h-100">
+                  5G Expansion: What it Means for Consumers and Businesses
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!-- Right Side  -->
+          <div class="col-lg-6 row justify-content-evenly align-items-center">
+            <!-- feature-01  -->
+            <div class="col-lg-6">
+              <img
+                src="./images/page4Image/nw-2.jpeg"
+                alt="Cricket"
+                class="w-100 h-75" />
+              <div
+                class="d-flex flex-column justify-content-start align-items-start">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 text-center">
+                  <p class="">Technology</p>
+                  <p class="">|</p>
+                  <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                  <p class="">6 Min</p>
+                </div>
+                <h4 class="fs-6 w-100 h-100">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+              </div>
+            </div>
+            <!-- feature-02  -->
+            <div class="col-lg-6">
+              <img
+                src="./images/page4Image/nw-3.webp"
+                alt="Cricket"
+                class="w-100 h-75" />
+              <div
+                class="d-flex flex-column justify-content-start align-items-start">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 text-center">
+                  <p class="">Technology</p>
+                  <p class="">|</p>
+                  <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                  <p class="">6 Min</p>
+                </div>
+                <h4 class="fs-6 w-100 h-100">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Technology End Hear  -->
+      <!-- Staff Writers Start Hear  -->
+      <div class="my-5">
+        <!-- Text Top -->
+        <div class="mx-4 d-flex justify-content-between align-items-center">
+          <h1 class="">Staff Writers</h1>
+          <h5 class="">View All <i class="bi bi-arrow-right"></i></h5>
+        </div>
+        <!-- Images Bottom  -->
+        <div class="row justify-content-center align-items-center my-4 mx-3">
+          <!-- Staff 01  -->
+          <div class="col-lg-3">
+            <img
+              src="./images/page4Image/staf-1.jpg"
+              alt=""
+              class="w-75 h-75" />
+            <div class="my-2">
+              <h3 class="fs-5">Ethan Collins</h3>
+              <p class="fs-6">Senior Writer</p>
+            </div>
+          </div>
+          <!-- Staff 02  -->
+          <div class="col-lg-3">
+            <img
+              src="./images/page4Image/staf-2.jpg"
+              alt=""
+              class="w-75 h-75" />
+            <div class="my-2">
+              <h3 class="fs-5">Sofia Ramiroz</h3>
+              <p class="fs-6">Author</p>
+            </div>
+          </div>
+          <!-- Staff 03  -->
+          <div class="col-lg-3">
+            <img
+              src="./images/page4Image/staf-3.jpg"
+              alt=""
+              class="w-75 h-75" />
+            <div class="my-2">
+              <h3 class="fs-5">Laura Bonnett</h3>
+              <p class="fs-6">Editorialist</p>
+            </div>
+          </div>
+          <!-- Staff 04  -->
+          <div class="col-lg-3">
+            <img
+              src="./images/page4Image/staf-4.jpg"
+              alt=""
+              class="w-75 h-75" />
+            <div class="my-2">
+              <h3 class="fs-5">Michael Brown</h3>
+              <p class="fs-6">Content Writer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Staff Writers end Hear  -->
+      <!-- Articles & Resources Start Hear  -->
+      <div class="">
+        <!-- Header  -->
+        <h1 class="">Articles & Resources</h1>
+        <!-- Main div  -->
+        <div class="">
+          <!-- Feature-01 -->
+          <div class="my-5">
+            <div class="row justify-content-between align-items-center">
+              <!-- Left Side  -->
+              <div class="col-lg-5">
+                <!-- Text  -->
+                <div class="">
+                  <div class="d-flex flex-column align-items-start my-4">
+                    <div class="d-flex flex-column align-items-start mb-3">
+                      <div
+                        class="d-flex gap-3 justify-content-center align-items-center fs-6">
+                        <p class="">Technology</p>
+                        <p class="">December 16,2024</p>
+                      </div>
+                      <h2 class="fs-4">
+                        5 Cutting-Edge Technology in Education Transforming How
+                        We Learn
+                      </h2>
+                    </div>
+                    <p class="text-danger text-center">
+                      Read More <i class="bi bi-arrow-right text-center"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Side  -->
+              <div class="col-lg-7">
+                <img
+                  src="./images/page4Image/r-1.jpg"
+                  alt="Feature"
+                  class="whr" />
+              </div>
+            </div>
+            <!-- Hr  -->
+            <div>
+              <hr class="text-dark w-100 mt-5" />
+            </div>
+          </div>
+          <!-- Feature-02 -->
+          <div class="my-5">
+            <div class="row justify-content-between align-items-center">
+              <!-- Left Side  -->
+              <div class="col-lg-5">
+                <!-- Text  -->
+                <div class="">
+                  <div class="d-flex flex-column align-items-start my-4">
+                    <div class="d-flex flex-column align-items-start mb-3">
+                      <div
+                        class="d-flex gap-3 justify-content-center align-items-center fs-6">
+                        <p class="">Health</p>
+                        <p class="">December 16,2024</p>
+                      </div>
+                      <h2 class="fs-4">
+                        How AI is Revolutionizing Healthcare: Improving
+                        Diagnostics and Patient Care
+                      </h2>
+                    </div>
+                    <p class="text-danger text-center">
+                      Read More <i class="bi bi-arrow-right text-center"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Side  -->
+              <div class="col-lg-7">
+                <img
+                  src="./images/page4Image/r-2.2.png"
+                  alt="Feature"
+                  class="whr" />
+              </div>
+            </div>
+            <!-- Hr  -->
+            <div>
+              <hr class="text-dark w-100 mt-5" />
+            </div>
+          </div>
+          <!-- Feature-03 -->
+          <div class="my-5">
+            <div class="row justify-content-between align-items-center">
+              <!-- Left Side  -->
+              <div class="col-lg-5">
+                <!-- Text  -->
+                <div class="">
+                  <div class="d-flex flex-column align-items-start my-4">
+                    <div class="d-flex flex-column align-items-start mb-3">
+                      <div
+                        class="d-flex gap-3 justify-content-center align-items-center fs-6">
+                        <p class="">Business</p>
+                        <p class="">December 16,2024</p>
+                      </div>
+                      <h2 class="fs-4">
+                        The Rise of Remote Work: The Shift to Flexible Work
+                        Environments
+                      </h2>
+                    </div>
+                    <p class="text-danger text-center">
+                      Read More <i class="bi bi-arrow-right text-center"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Side  -->
+              <div class="col-lg-7">
+                <img
+                  src="./images/page4Image/r-3.3.jpg"
+                  alt="Feature"
+                  class="whr" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Articles & Resources End Hear  -->
+      <!-- Stay Informed & Sign Up Start Hear  -->
+      <div class="bgtexts my-5">
+        <h2 class="texs fs-1 fw-bold container">
+          EWS * NEWS * NEWS * NEWS * NEWS * NEWS * NEWS *
+        </h2>
+        <div class="row justify-content-between align-items-center">
+          <!-- Left Text side -->
+          <div class="col-lg-6 m-5 p-5 text-white">
+            <h2 class="">Stay informed with our latest news and updates.</h2>
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+              debitis. Voluptatum praesentium natus itaque debitis, unde sed
+              perspiciatis atque excepturi!
+            </p>
+          </div>
+          <!-- Right Text side -->
+          <div
+            class="col-lg-5 d-flex flex-column align-items-center justify-content-center gap-3">
+            <input type="email" placeholder="Enter your mail" class="w-50" />
+            <button type="button" class="btn btn-dark w-50">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <!-- Stay Informed & Sign Up End Hear  -->
+      <!-- Podcast Start Hear  -->
+      <div class="row justify-content-evenly align-items-center">
+        <!-- Text Top -->
+        <div class="mx-4 d-flex justify-content-between align-items-center">
+          <h1 class="">Podcast</h1>
+          <h5 class="me-4">View All <i class="bi bi-arrow-right"></i></h5>
+        </div>
+        <!-- Pod feature 01  -->
+        <div class="my-5 col-lg-4">
+          <!-- Images Bottom  -->
+          <div class="">
+            <!-- Left Side  -->
+            <div class="">
+              <div class="">
+                <img
+                  src="./images/page4Image/pod-1.1.jpg"
+                  alt="Cricket"
+                  class="pwh" />
+                <div class="d-flex align-items-center txd mx-4">
+                  <!-- Text  -->
+                  <div
+                    class="text-white d-flex flex-column justify-content-start align-items-start w-100 h-100">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2 text-center">
+                      <p class="">Sports</p>
+                      <p class="">|</p>
+                      <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                      <p class="">6 Min</p>
+                    </div>
+                    <h4 class="fs-6 w-100 h-75 mb-4">
+                      The Challenges and opportunities of professional
+                    </h4>
+                  </div>
+                  <!--Play Button  -->
+                  <div class="">
+                    <i class="bi bi-play-circle-fill text-danger fs-1"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mtp">
+                <h3 class="fs-5 mt-sm- mt-md-4 mt-lg-0">Ethan Collins</h3>
+                <p class="fs-6 mpt">Senior Writer</p>
+              </div>
+            </div>
+            <!-- Right Side  -->
+          </div>
+        </div>
+        <!-- Pod feature 02  -->
+        <div class="my-5 col-lg-4">
+          <!-- Images Bottom  -->
+          <div class="">
+            <!-- Left Side  -->
+            <div class="">
+              <div class="">
+                <img
+                  src="./images/page4Image/pod-2.2.avif"
+                  alt="Cricket"
+                  class="pwh" />
+                <div class="d-flex align-items-center txd mx-4">
+                  <!-- Text  -->
+                  <div
+                    class="text-white d-flex flex-column justify-content-start align-items-start w-100 h-100">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2 text-center">
+                      <p class="">Entertainment</p>
+                      <p class="">|</p>
+                      <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                      <p class="">6 Min</p>
+                    </div>
+                    <h4 class="fs-6 w-100 h-75 mb-4">
+                      E-commerce Growth Transforming Retail 2024
+                    </h4>
+                  </div>
+                  <!--Play Button  -->
+                  <div class="">
+                    <i class="bi bi-play-circle-fill text-danger fs-1"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mtp">
+                <h3 class="fs-5 mt-sm- mt-md-4 mt-lg-0">Laura Bennett</h3>
+                <p class="fs-6 mpt">Editorialist</p>
+              </div>
+            </div>
+            <!-- Right Side  -->
+          </div>
+        </div>
+        <!-- Pod feature 03  -->
+        <div class="my-5 col-lg-4">
+          <!-- Images Bottom  -->
+          <div class="">
+            <!-- Left Side  -->
+            <div class="">
+              <div class="">
+                <img
+                  src="./images/page4Image/pod-3.3.webp"
+                  alt="Cricket"
+                  class="pwh" />
+                <div class="d-flex align-items-center txd mx-4">
+                  <!-- Text  -->
+                  <div
+                    class="text-white d-flex flex-column justify-content-start align-items-start w-100 h-100">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2 text-center">
+                      <p class="">Business</p>
+                      <p class="">|</p>
+                      <p class=""><i class="bi bi-clock text-center"></i></p>
+
+                      <p class="">6 Min</p>
+                    </div>
+                    <h4 class="fs-6 w-100 h-75 mb-4">
+                      Sustainable Fashion: Moving Towards Eco-Friendly Designs
+                    </h4>
+                  </div>
+                  <!--Play Button  -->
+                  <div class="">
+                    <i class="bi bi-play-circle-fill text-danger fs-1"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mtp">
+                <h3 class="fs-5 mt-sm- mt-md-4 mt-lg-0">Laura Bennett</h3>
+                <p class="fs-6 mpt">Editorialist</p>
+              </div>
+            </div>
+            <!-- Right Side  -->
+          </div>
+        </div>
+      </div>
+      <!-- Podcast End Hear  -->
+
+      <!-- Footer Start Hear -->
+      <div class="bg-dark p-5">
+        <!-- Top  -->
+        <div class="">
+          <div class="row justify-content-lg-between align-items-center">
+            <!-- Logo  -->
+            <div class="col-sm-10 col-md-4 col-lg-4">
+              <img
+                src="./images/page4Image/logo.png"
+                alt="logo"
+                class="w-50 h-50" />
+            </div>
+            <!-- Nav  -->
+            <div class="col-sm-10 col-md-8 col-lg-8">
+              <ul
+                class="navbar-nav fs-5 d-flex flex-row justify-content-evenly align-items-center gap-2">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-black text-white"
+                    aria-current="page"
+                    href="#"
+                    >Entertainment</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black text-white" href="#">Sports </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black text-white" href="#"
+                    >Politics</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black text-white" href="#"
+                    >Business</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black text-white" href="#"
+                    >Technology</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black text-white" href="#">Health</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Hr  -->
+          <div>
+            <hr class="text-white w-100 mt-5" />
+          </div>
+        </div>
+        <!-- Middle  -->
+        <div class="row justify-content-between align-items-center my-5">
+          <!-- Left  -->
+           <div class="col-lg-7">
+            <!-- Text  -->
+            <h5 class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid dolore nulla ex provident natus.</h5>
+            <!-- Images  -->
+            <div class="mt-5 d-flex justify-content-between align-items-center ">
+              <img src="./images/page4Image/f-1.jpg" alt="Footer" class="w-25 h-25">
+              <img src="./images/page4Image/f-2.jpg" alt="Footer" class="w-25 h-25">
+              <img src="./images/page4Image/f-3.avif" alt="Footer" class="w-25 h-25">
+            </div>
+           </div>
+          <!-- Right  -->
+           <div class="col-lg-4 d-flex justify-content-between">
+            <!-- line-01  -->
+            <div class="fs-6">
+              <p class="text-dark-emphasis">Pages</p>
+              
+              <div class=" text-white">
+                <p class="">About Us</p>
+                <p class="">News</p>
+                <p class="">Authors</p>
+                <p class="">Posdcast</p>
+                <p class="">Contact Us</p>
+              </div>
+            </div>
+            <!-- line-02  -->
+            <div class="fs-6">
+              <p class="text-dark-emphasis">Contact Us</p>
+              
+              <div class=" text-white">
+                <p class="">nnonews@gmail.com</p>
+                <p class="">+88067432</p>
+                <!-- Follow  -->
+                <div class="mt-5">
+                  <p class="text-dark-emphasis">Follow Us</p>
+                  <!-- Media  -->
+                  <div class="">
+                    <i class="bi bi-facebook fs-2 p-1"></i>
+                    <i class="bi bi-linkedin fs-2 p-1"></i>
+                    <i class="bi bi-instagram fs-2 p-1"></i>
+                    <i class="bi bi-youtube fs-2 p-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+        <!-- Bottom  -->
+        <div class="">
+          <!-- Hr  -->
+          <div>
+            <hr class="text-white w-100 mt-5" />
+          </div>
+          <div class="text-white row justify-content-between align-items-center">
+            <div class="col-sm-10 col-md-8 col-lg-8 fsw">
+              <p class="">@ 2025 NNONEWS. Designed by Nix.Powered by write</p>
+            </div>
+            
+            <div class="col-sm-10 col-md-4 col-lg-4 d-flex justify-content-center align-items-center gap-3 fsw">
+              <p class="">Style Guid</p>
+              <p class="">Change Logo</p>
+              <p class="">License</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End Hear -->
+    </div>
+  </body>
+</html>
